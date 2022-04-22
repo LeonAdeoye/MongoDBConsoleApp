@@ -10,7 +10,7 @@ namespace MongoDBConsoleApp
 
         public MongoCRUD(string databaseName)
         {
-            string connectionURI = "mongodb://workbench_user:workbench_user@leonadeoyemongodbcluster-shard-00-01-gni1u.azure.mongodb.net:27017,leonadeoyemongodbcluster-shard-00-00-gni1u.azure.mongodb.net:27017,leonadeoyemongodbcluster-shard-00-02-gni1u.azure.mongodb.net:27017/admin?serverSelectionTimeoutMS=20000&readPreference=primary&ssl=true";
+            string connectionURI = "mongodb://wo*ch_user:wo*ch_user@leonadeoyemongodbcluster-shard-00-01-gni1u.azure.mongodb.net:27017,leonadeoyemongodbcluster-shard-00-00-gni1u.azure.mongodb.net:27017,leonadeoyemongodbcluster-shard-00-02-gni1u.azure.mongodb.net:27017/admin?serverSelectionTimeoutMS=20000&readPreference=primary&ssl=true";
             var client = new MongoClient(connectionURI);
             database = client.GetDatabase(databaseName);
         }
